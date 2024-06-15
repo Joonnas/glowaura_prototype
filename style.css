@@ -10,7 +10,7 @@
 
 #header {
     width: 100dvw;
-    /* margin-bottom: 100px; */
+    height: 80svh;
     background-color: black;
     display: flex;
     justify-content: center;
