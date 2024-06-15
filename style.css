@@ -64,6 +64,40 @@
     justify-content: center;
 }
 
+#licenses {
+    color: rgb(179, 179, 179);
+    margin: 100px 20%;
+}
+#license-hover {
+    color: gray;
+}
+#license-hover:hover {
+    color: lightgray;
+    cursor: pointer;
+}
+
+#license-hover #licenses-tooltip {
+    visibility: hidden;
+    max-width: 400px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 0.8rem;
+  
+    /* Position the tooltip */
+    position: absolute;
+    transform: translate(0, -101%);
+    z-index: 1;
+    display: none;
+  }
+  
+  #license-hover:hover #licenses-tooltip {
+    visibility: visible;
+    display: block;
+  }
+
 @media screen and (max-width: 1000px) {
     #content {
         margin: 0 10%;
