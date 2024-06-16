@@ -85,18 +85,37 @@
     border-radius: 6px;
     padding: 5px 0;
     font-size: 0.8rem;
-  
+
     /* Position the tooltip */
     position: absolute;
     transform: translate(0, -101%);
     z-index: 1;
     display: none;
-  }
-  
-  #license-hover:hover #licenses-tooltip {
+}
+
+#license-hover:hover #licenses-tooltip {
     visibility: visible;
     display: block;
-  }
+}
+
+
+/* QR CODE */
+
+#qr-code {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 10vw;
+}
+
+#qr-heading {
+    text-align: center; 
+    background-color: white;
+}
+
+#qr-code img {
+    width: 100%;
+}
 
 @media screen and (max-width: 1000px) {
     #content {
@@ -106,5 +125,9 @@
     #images-container {
         flex-direction: column;
         align-content: center;
+    }
+
+    #qr-code {
+        width: 30vw;
     }
 }
